@@ -1,0 +1,46 @@
+@media (min-width: $MQMobile)
+  .sidebar
+    width: 15rem !important
+
+  .page, .password-wrapper-in
+    margin-left: 15rem !important
+
+
+.custom-block
+  &.right
+    color transparentify($accentColor, 0.8)
+    font-size 0.9rem
+    text-align right
+
+.sidebar > .sidebar-links > li > a.sidebar-link.active
+  font-weight: normal !important
+  background-color: inherit  !important
+  color: $accentColor !important
+
+.sidebar-sub-headers a.sidebar-link
+  padding-left 2.5rem !important
+  font-size .9em !important
+  transition: color .25s ease-in-out,border-color .25s ease-in-out,background .25s ease-in-out  !important
+
+.sidebar-sub-headers a.active
+  border-right: 4px solid !important
+  background-color: rgba(62, 175, 124, .1) !important
+  font-size .9em !important
+
+a.sidebar-link
+  margin-left: 0 !important
+  margin-right: 0 !important
+  border-radius: 0 !important
+  padding-left: 1.5rem !important
+
+.sidebar > .sidebar-links > li > a.sidebar-link
+  font-weight: normal !important
+  font-size: .98em !important
+
+.sidebar .sidebar-sub-headers
+  padding-left 0 !important
+
+.sidebar > .sidebar-links > li:not(:first-child)
+  margin-top 0 !important
+
+

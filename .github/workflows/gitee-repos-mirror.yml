@@ -1,0 +1,17 @@
+on: push
+name: Hub Action test for org account
+jobs:
+  run:
+    name: Run
+    runs-on: ubuntu-latest
+    steps:
+    - name: Mirror the Github organization repos to Gitee.
+      uses: Yikun/hub-mirror-action@master
+      with:
+        src: github/x-vic
+        dst: gitee/x-vic
+        dst_key: ${{ secrets.LS_SSH }}
+        dst_token: ${{ secrets.GITEE_TOKEN }}
+        account_type: org
+  
+  
