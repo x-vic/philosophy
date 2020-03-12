@@ -1,5 +1,5 @@
 on: push
-name: Hub Action test for org account
+name: 同步 github 到 gitee
 jobs:
   run:
     name: Run
